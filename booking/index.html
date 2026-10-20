@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f6f1">
+<title>Бронирование — Lauberge GA</title>
+<style>
+:root{--ink:#242720;--muted:#77796f;--paper:#f8f6f1;--white:#fff;--line:#e5e1d7;--gold:#a9864e;--gold-dark:#806437;--soft:#efede6;--danger:#a23a32;--success:#35694b;--radius:15px;--shadow:0 10px 32px rgba(42,39,31,.06)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}button,input,select,textarea{font:inherit}button,a,input,select,textarea{outline-offset:3px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold-dark)}a{color:inherit}button{cursor:pointer}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}.site-header{background:rgba(248,246,241,.96);border-bottom:1px solid var(--line)}.header-inner{min-height:82px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:220px}.brand-mark{width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold-dark);font-family:Georgia,serif;font-size:21px}.brand-name{font-family:Georgia,'Times New Roman',serif;letter-spacing:.13em;font-size:17px}.brand-sub{display:block;font-size:9px;letter-spacing:.22em;color:var(--muted);margin-top:2px}.nav{display:flex;gap:25px;margin-left:auto}.nav a{text-decoration:none;color:#5f6059;font-size:13px}.nav a:hover{color:var(--gold-dark)}.header-actions{display:flex;align-items:center;gap:14px}.lang{border:0;background:transparent;color:#555;font-size:12px}.account{border:1px solid var(--line);background:transparent;border-radius:30px;padding:10px 14px;font-size:12px}.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark);font-weight:700}.page-heading{padding:32px 0 18px}.page-heading h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,4vw,42px);font-weight:400;line-height:1.15;margin:8px 0}.page-heading p{margin:0;color:var(--muted);font-size:14px}.steps{display:flex;align-items:center;gap:0;margin:18px 0 28px;padding:0;list-style:none}.steps li{display:flex;align-items:center;gap:9px;color:#99998f;font-size:12px;white-space:nowrap}.steps li:not(:last-child)::after{content:"";width:clamp(16px,4vw,58px);height:1px;background:var(--line);margin:0 12px}.step-no{width:26px;height:26px;border:1px solid #d7d3c8;border-radius:50%;display:grid;place-items:center;font-size:11px}.steps .done{color:#6c6e63}.steps .done .step-no{background:#e8e5dc;border-color:#e8e5dc;color:var(--ink)}.steps .active{color:var(--ink);font-weight:700}.steps .active .step-no{background:var(--ink);border-color:var(--ink);color:white}.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:24px;align-items:start}.main-col{display:grid;gap:18px;min-width:0}.panel,.summary{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.panel{padding:24px}.section-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;margin-bottom:18px}.section-head h2,.summary h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:23px;line-height:1.2;margin:0}.section-head p{color:var(--muted);font-size:12px;margin:6px 0 0}.text-link{border:0;background:transparent;color:var(--gold-dark);font-size:12px;text-decoration:underline;text-underline-offset:3px;padding:3px 0;white-space:nowrap}.hotel-card{display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;align-items:center}.hotel-photo{width:150px;height:126px;object-fit:cover;border-radius:10px;background:#e8e3d9}.hotel-title{font-family:Georgia,serif;font-size:21px;margin:0 0 4px;font-weight:400}.hotel-location{font-size:12px;color:var(--muted);margin:0 0 8px}.rating{display:inline-flex;align-items:center;gap:6px;font-size:12px}.rating b{background:var(--ink);color:white;border-radius:5px;padding:3px 6px;font-size:11px}.hotel-link{display:block;margin-top:9px;font-size:12px;color:var(--gold-dark)}.details-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.detail{background:var(--paper);border-radius:9px;padding:12px;min-width:0}.detail label{display:block;font-size:10px;color:var(--muted);margin-bottom:4px}.detail strong{font-size:13px;font-weight:600;display:block}.detail select,.detail input{width:100%;border:0;background:transparent;color:var(--ink);padding:0;font-size:13px;min-width:0}.inline-note{display:none;background:#fbf4e8;border:1px solid #ead9b9;color:#725a32;padding:10px 12px;border-radius:8px;font-size:12px;margin-top:14px}.inline-note.show{display:block}.room-card{display:grid;grid-template-columns:180px minmax(0,1fr);gap:18px;padding:0 0 20px;border-bottom:1px solid var(--line)}.room-card:last-of-type{padding-bottom:0;border-bottom:0}.room-photo{width:100%;height:155px;object-fit:cover;border-radius:10px;background:#e8e3d9}.room-title{font-family:Georgia,serif;font-size:20px;font-weight:400;margin:0 0 7px}.room-meta{font-size:12px;color:var(--muted);margin-bottom:9px}.amenities{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}.chip{font-size:10px;background:var(--paper);border-radius:20px;padding:5px 9px;color:#62635b}.rate-option{border:1px solid var(--line);border-radius:10px;padding:13px 14px;margin-top:11px;display:flex;align-items:flex-start;gap:10px;cursor:pointer}.rate-option.selected{border-color:var(--gold);background:#fcfaf5}.rate-option input{margin-top:4px;accent-color:var(--gold-dark)}.rate-body{flex:1;min-width:0}.rate-name{font-size:13px;font-weight:700}.rate-desc{font-size:11px;color:var(--muted);margin-top:3px}.rate-price{font-weight:700;font-size:13px;white-space:nowrap}.demo-label{font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#866b3e;background:#f6eedf;padding:4px 6px;border-radius:4px;margin-left:5px;vertical-align:2px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{min-width:0}.field.full{grid-column:1/-1}.field label,.field-label{display:block;font-size:12px;font-weight:600;margin-bottom:7px}.required{color:var(--gold-dark)}.field input,.field select,.field textarea{width:100%;border:1px solid #dcd8ce;background:#fff;border-radius:8px;padding:12px 13px;font-size:13px;color:var(--ink);transition:border .15s,box-shadow .15s}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(169,134,78,.12);outline:none}.field input[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:var(--danger)}.field textarea{resize:vertical;min-height:94px}.hint,.error{font-size:11px;margin-top:5px}.hint{color:var(--muted)}.error{color:var(--danger);display:none}.error.show{display:block}.checkbox-line{display:flex;gap:9px;align-items:flex-start;font-size:12px;color:#55574f}.checkbox-line input{accent-color:var(--gold-dark);margin-top:3px}.subsection{border-top:1px solid var(--line);padding-top:18px;margin-top:20px}.subsection h3{font-size:14px;margin:0 0 12px}.guest-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.guest-control{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:9px;padding:10px 11px;gap:7px}.guest-control label{font-size:11px;color:var(--muted)}.counter{display:flex;align-items:center;gap:8px}.counter button{width:26px;height:26px;border:1px solid var(--line);background:white;border-radius:50%;font-size:16px;line-height:1}.counter button:disabled{opacity:.35;cursor:not-allowed}.counter output{font-size:13px;min-width:12px;text-align:center}.ages{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.age-field{font-size:11px;color:var(--muted)}.age-field select{display:block;margin-top:4px;border:1px solid var(--line);border-radius:7px;background:white;padding:7px}.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.wish{display:flex;align-items:center;gap:9px;padding:11px;border:1px solid var(--line);border-radius:9px;font-size:12px;cursor:pointer}.wish:has(input:checked){background:#fcfaf5;border-color:var(--gold)}.wish input{accent-color:var(--gold-dark)}.policy-note{font-size:11px;color:var(--muted);margin:12px 0 0}.service-list{display:grid;gap:10px}.service{display:flex;gap:11px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:13px}.service input{accent-color:var(--gold-dark);margin-top:4px}.service-main{flex:1;min-width:0}.service-title{font-size:12px;font-weight:700}.service-desc{font-size:11px;color:var(--muted);margin-top:3px}.service-price{font-size:12px;font-weight:700;white-space:nowrap}.service-tag{display:inline-block;font-size:9px;color:var(--gold-dark);margin-top:4px}.summary{position:sticky;top:18px;padding:22px}.summary-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.summary h2{font-size:22px}.demo-pill{font-size:9px;letter-spacing:.07em;text-transform:uppercase;background:#f6eedf;color:#806437;border-radius:4px;padding:5px 7px}.summary-dates{font-size:12px;color:var(--muted);padding-bottom:15px;border-bottom:1px solid var(--line)}.summary-dates strong{display:block;color:var(--ink);font-size:13px;margin-bottom:3px}.price-lines{display:grid;gap:11px;padding:16px 0}.price-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#62635b}.price-line span:last-child{color:var(--ink);text-align:right;white-space:nowrap}.price-line.total{border-top:1px solid var(--line);padding-top:15px;font-size:14px;font-weight:700;color:var(--ink)}.price-line.total span:last-child{font-size:20px}.price-line.discount span:last-child{color:var(--success)}.pay-now{background:var(--paper);border-radius:9px;padding:13px;margin-bottom:14px}.pay-now .pay-row{display:flex;justify-content:space-between;gap:8px;font-size:12px}.pay-now strong{font-size:16px}.pay-now p{font-size:10px;color:var(--muted);margin:5px 0 0}.primary{width:100%;border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:8px;padding:14px 16px;font-size:12px;font-weight:700;letter-spacing:.02em;transition:background .15s,border-color .15s}.primary:hover{background:var(--gold-dark);border-color:var(--gold-dark)}.secondary{width:100%;border:1px solid var(--line);background:white;border-radius:8px;padding:11px;font-size:12px;margin-top:9px}.summary-foot{font-size:10px;color:var(--muted);text-align:center;margin:11px 0 0}.legal{display:flex;gap:9px;align-items:flex-start;font-size:11px;color:#62635b;margin:15px 0}.legal input{margin-top:3px;accent-color:var(--gold-dark)}.legal a{color:var(--gold-dark)}.form-alert{display:none;background:#fff0ef;border:1px solid #e7b9b5;border-radius:9px;padding:12px 14px;color:#842e28;font-size:12px;margin-bottom:15px}.form-alert.show{display:block}.footer{margin-top:45px;background:#eeece5;border-top:1px solid var(--line);padding:28px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{font-family:Georgia,serif;letter-spacing:.12em;font-size:14px}.footer p,.footer a{font-size:11px;color:var(--muted)}.footer-links{display:flex;gap:17px;flex-wrap:wrap}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline}.modal-backdrop{position:fixed;inset:0;background:rgba(20,21,18,.45);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}.modal-backdrop.open{display:flex}.modal{width:min(500px,100%);background:white;border-radius:16px;padding:26px;box-shadow:0 25px 80px #0002}.modal h2{font-family:Georgia,serif;font-size:26px;font-weight:400;margin:0 0 10px}.modal p{font-size:13px;color:#62635b}.modal-actions{display:flex;gap:10px;margin-top:20px}.modal-actions button{flex:1}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:900px){.layout{grid-template-columns:minmax(0,1fr) 300px;gap:16px}.panel{padding:20px}.nav{gap:14px}.brand{min-width:190px}.details-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.room-card{grid-template-columns:145px minmax(0,1fr)}.room-photo{height:145px}}
+@media(max-width:700px){.wrap{width:min(100% - 28px,560px)}.header-inner{min-height:68px;gap:10px}.brand{min-width:0}.brand-mark{width:34px;height:34px}.brand-name{font-size:14px}.brand-sub{font-size:8px}.nav{display:none}.header-actions{margin-left:auto;gap:8px}.account{padding:8px 10px}.page-heading{padding:25px 0 12px}.steps{overflow-x:auto;padding-bottom:5px;margin:15px 0 20px}.steps li{font-size:10px}.steps li:not(:last-child)::after{width:18px;margin:0 7px}.step-no{width:24px;height:24px;flex-shrink:0}.layout{grid-template-columns:1fr}.summary{position:static;grid-row:1}.main-col{grid-row:2}.panel{padding:17px}.section-head h2,.summary h2{font-size:21px}.hotel-card{grid-template-columns:105px minmax(0,1fr);gap:12px}.hotel-photo{width:105px;height:116px}.hotel-title{font-size:18px}.hotel-location{font-size:11px}.details-grid{gap:7px}.detail{padding:10px}.room-card{grid-template-columns:1fr;gap:12px}.room-photo{height:190px}.form-grid{gap:12px}.guest-controls{grid-template-columns:1fr}.guest-control{padding:9px 11px}.check-grid{grid-template-columns:1fr}.summary{padding:18px}.summary .price-lines{grid-template-columns:1fr 1fr;column-gap:18px}.price-line.total{grid-column:1/-1}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{gap:12px}.modal-actions{flex-direction:column}}
+@media(max-width:390px){.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.details-grid{grid-template-columns:1fr 1fr}.rate-option{padding:11px}.rate-price{font-size:12px}.steps li:not(:last-child)::after{width:10px;margin:0 4px}.steps li{gap:5px}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#" aria-label="Lauberge GA — главная">
+      <span class="brand-mark" aria-hidden="true">L</span>
+      <span><span class="brand-name">LAUBERGE GA</span><span class="brand-sub">BOUTIQUE HOTELS</span></span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#hotel">Отели</a><a href="#stay">Проживание</a><a href="#guest">Помощь</a>
+    </nav>
+    <div class="header-actions"><button class="lang" type="button" id="languageBtn" aria-label="Выбрать язык">RU⌄</button><button class="account" type="button" id="accountBtn">Личный кабинет ↗</button></div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="page-heading">
+    <div class="eyebrow">Lauberge GA · Прямое бронирование</div>
+    <h1>Детали вашего проживания</h1>
+    <p>Проверьте параметры поездки и заполните данные гостя.</p>
+  </section>
+  <ol class="steps" aria-label="Этапы бронирования">
+    <li class="done"><span class="step-no">✓</span>Поиск отеля</li>
+    <li class="done"><span class="step-no">✓</span>Выбор номера</li>
+    <li class="active" aria-current="step"><span class="step-no">3</span>Данные гостя</li>
+    <li><span class="step-no">4</span>Подтверждение</li>
+  </ol>
+
+  <form id="bookingForm" novalidate>
+  <div class="layout">
+    <div class="main-col">
+      <section class="panel" id="hotel">
+        <div class="section-head"><div><div class="eyebrow">Ваш выбор</div><h2>Выбранный отель</h2></div><button type="button" class="text-link" id="hotelDetailsBtn">Подробнее об отеле ↗</button></div>
+        <div class="hotel-card">
+          <img class="hotel-photo" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=500&q=80" alt="Архитектура и территория бутик-отеля" onerror="this.style.display='none'">
+          <div><h3 class="hotel-title">Lauberge GA Riverside</h3><p class="hotel-location">Демонстрационный адрес · Санкт-Петербург</p><div class="rating"><b>9,2</b><span>Пример рейтинга · Исключительно</span></div><a class="hotel-link" href="#stay">Посмотреть параметры проживания ↓</a></div>
+        </div>
+      </section>
+
+      <section class="panel" id="stay">
+        <div class="section-head"><div><div class="eyebrow">Шаг 1 из 2</div><h2>Параметры проживания</h2><p>Изменение параметров требует повторной проверки доступности и цены.</p></div></div>
+        <div class="details-grid">
+          <div class="detail"><label for="checkin">Заезд</label><input id="checkin" name="checkin" type="date" required></div>
+          <div class="detail"><label for="checkout">Выезд</label><input id="checkout" name="checkout" type="date" required></div>
+          <div class="detail"><label>Длительность</label><strong id="nightsText">3 ночи</strong></div>
+          <div class="detail"><label for="rooms">Номеров</label><select id="rooms" name="rooms"><option value="1" selected>1 номер</option><option value="2">2 номера</option><option value="3">3 номера</option></select></div>
+        </div>
+        <div class="subsection" style="border-top:0;margin-top:15px;padding-top:0">
+          <h3>Гости</h3>
+          <div class="guest-controls">
+            <div class="guest-control"><label for="adultsCount">Взрослые</label><div class="counter"><button type="button" data-counter="adults" data-delta="-1" aria-label="Уменьшить взрослых">−</button><output id="adultsCount" aria-live="polite">2</output><button type="button" data-counter="adults" data-delta="1" aria-label="Увеличить взрослых">+</button></div></div>
+            <div class="guest-control"><label for="childrenCount">Дети</label><div class="counter"><button type="button" data-counter="children" data-delta="-1" aria-label="Уменьшить детей">−</button><output id="childrenCount" aria-live="polite">0</output><button type="button" data-counter="children" data-delta="1" aria-label="Увеличить детей">+</button></div></div>
+            <div class="guest-control"><label for="rooms">Номера</label><span style="font-size:12px">Выше</span></div>
+          </div>
+          <div class="ages" id="childrenAges" aria-live="polite"></div>
+          <div class="inline-note" id="availabilityNote" role="status">Параметры изменены. Доступность номера и стоимость необходимо повторно проверить — серверная проверка не подключена.</div>
+        </div>
+      </section>
+
+      <section class="panel" id="room">
+        <div class="section-head"><div><div class="eyebrow">Демонстрационные данные</div><h2>Номер и тариф</h2><p>Тарифные условия приведены только для демонстрации интерфейса.</p></div></div>
+        <article class="room-card">
+          <img class="room-photo" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=700&q=80" alt="Интерьер номера с большой кроватью" onerror="this.style.display='none'">
+          <div><h3 class="room-title">Делюкс с видом на город</h3><div class="room-meta">До 2 взрослых · Одна большая кровать · 32 м²</div><p style="font-size:12px;margin:0;color:#5f6059">Светлый интерьер, рабочая зона, собственная ванная комната.</p><div class="amenities"><span class="chip">Wi-Fi</span><span class="chip">Кондиционер</span><span class="chip">Кофемашина</span><span class="chip">Вид на город</span></div></div>
+        </article>
+        <label class="rate-option selected" data-rate="flex">
+          <input type="radio" name="rate" value="flex" checked>
+          <span class="rate-body"><span class="rate-name">Гибкий тариф <span class="demo-label">Демо</span></span><span class="rate-desc">Завтрак не включён · Условная бесплатная отмена до 18:00 за 2 дня до заезда · Оплата при заезде</span></span>
+          <span class="rate-price" id="flexRate">₽ 18 000</span>
+        </label>
+        <label class="rate-option" data-rate="breakfast">
+          <input type="radio" name="rate" value="breakfast">
+          <span class="rate-body"><span class="rate-name">С завтраком <span class="demo-label">Демо</span></span><span class="rate-desc">Завтрак включён · Условная невозвратная цена · Полная оплата при оформлении на следующем шаге</span></span>
+          <span class="rate-price" id="breakfastRate">₽ 21 600</span>
+        </label>
+        <p class="policy-note">Категория, цены и правила тарифа вымышлены для прототипа. Доступность не подтверждена.</p>
+      </section>
+
+      <section class="panel" id="guest">
+        <div class="section-head"><div><div class="eyebrow">Шаг 2 из 2</div><h2>Данные гостя</h2><p>Укажите контакты, на которые можно отправить информацию по бронированию.</p></div></div>
+        <div class="form-alert" id="formAlert" role="alert" tabindex="-1">Проверьте отмеченные поля и обязательные согласия.</div>
+        <div class="field" style="margin-bottom:18px">
+          <label class="checkbox-line"><input type="checkbox" id="forOther"> <span>Я оформляю бронирование для другого человека</span></label>
+        </div>
+        <div class="form-grid">
+          <div class="field"><label for="firstName">Имя <span class="required">*</span></label><input id="firstName" name="firstName" autocomplete="given-name" required placeholder="Имя"><div class="error" id="firstNameError">Укажите имя.</div></div>
+          <div class="field"><label for="lastName">Фамилия <span class="required">*</span></label><input id="lastName" name="lastName" autocomplete="family-name" required placeholder="Фамилия"><div class="error" id="lastNameError">Укажите фамилию.</div></div>
+          <div class="field"><label for="middleName">Отчество</label><input id="middleName" name="middleName" autocomplete="additional-name" placeholder="Если есть"></div>
+          <div class="field"><label for="email">E-mail <span class="required">*</span></label><input id="email" name="email" type="email" autocomplete="email" required placeholder="name@example.com" inputmode="email"><div class="error" id="emailError">Введите корректный e-mail.</div></div>
+          <div class="field"><label for="phone">Телефон <span class="required">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+7 999 123-45-67" inputmode="tel"><div class="error" id="phoneError">Укажите корректный номер телефона (не менее 7 цифр).</div></div>
+          <div class="field"><label for="country">Страна проживания</label><select id="country" name="country"><option value="">Выберите страну</option><option>Россия</option><option>Беларусь</option><option>Казахстан</option><option>Другая страна</option></select></div>
+          <div class="field full"><label for="comment">Комментарий к бронированию</label><textarea id="comment" name="comment" maxlength="700" placeholder="Например, ориентировочное время прибытия"></textarea><div class="hint">До 700 символов. Не указывайте платёжные данные.</div></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head"><div><div class="eyebrow">По возможности</div><h2>Особые пожелания</h2><p>Можно выбрать несколько вариантов.</p></div></div>
+        <div class="check-grid">
+          <label class="wish"><input type="checkbox" name="wish" value="late"> Поздний заезд</label>
+          <label class="wish"><input type="checkbox" name="wish" value="crib"> Детская кроватка</label>
+          <label class="wish"><input type="checkbox" name="wish" value="floor"> Предпочтительный этаж</label>
+          <label class="wish"><input type="checkbox" name="wish" value="view"> Предпочтительный вид из окна</label>
+        </div>
+        <div class="field" style="margin-top:13px"><label for="wishOther">Другие пожелания</label><textarea id="wishOther" name="wishOther" maxlength="500" placeholder="Расскажите, что сделает ваше пребывание комфортнее"></textarea></div>
+        <p class="policy-note">Мы передадим ваши пожелания сотрудникам отеля. Их выполнение зависит от доступности и возможностей отеля.</p>
+      </section>
+
+      <section class="panel">
+        <div class="section-head"><div><div class="eyebrow">По желанию</div><h2>Дополнительные услуги</h2><p>Стоимость услуг в этом прототипе демонстрационная.</p></div></div>
+        <div class="service-list">
+          <label class="service"><input type="checkbox" class="extra" value="breakfast" data-price="1800"><span class="service-main"><span class="service-title">Завтрак</span><span class="service-desc">Завтрак для одного гостя на одну ночь. Не выбирайте отдельно, если он уже включён в тариф.</span></span><span class="service-price">₽ 1 800 / ночь</span></label>
+          <label class="service"><input type="checkbox" class="extra" value="transfer" data-price="2500"><span class="service-main"><span class="service-title">Трансфер до отеля</span><span class="service-desc">Один автомобиль, одна поездка. Время и доступность требуют подтверждения.</span><span class="service-tag">Требует подтверждения отелем</span></span><span class="service-price">₽ 2 500</span></label>
+          <label class="service"><input type="checkbox" class="extra" value="decoration" data-price="3200"><span class="service-main"><span class="service-title">Украшение номера</span><span class="service-desc">Декоративное оформление к особому событию.</span><span class="service-tag">Требует подтверждения отелем</span></span><span class="service-price">₽ 3 200</span></label>
+          <label class="service"><input type="checkbox" class="extra" value="crib" data-price="0"><span class="service-main"><span class="service-title">Детская кроватка</span><span class="service-desc">Запрос на предоставление кроватки для ребёнка.</span><span class="service-tag">Стоимость и доступность уточняются</span></span><span class="service-price">Уточняется</span></label>
+        </div>
+        <p class="policy-note">Если выбран тариф «С завтраком», отдельная услуга завтрака не добавляется в расчёт. Детская кроватка — запрос, а не подтверждённая услуга.</p>
+      </section>
+
+      <section class="panel">
+        <div class="section-head"><div><div class="eyebrow">Перед продолжением</div><h2>Условия бронирования</h2></div></div>
+        <p style="font-size:12px;color:#5f6059;margin-top:0">Условия отмены и оплаты зависят от выбранного тарифа. Указанные выше правила демонстрационные и не являются офертой. Фактические правила должны быть получены от системы бронирования отеля.</p>
+        <p style="font-size:12px;color:#5f6059">Стандартное время заезда и выезда в прототипе не установлено. Уточните его в информации выбранного отеля перед поездкой.</p>
+        <label class="legal"><input type="checkbox" id="terms" required><span>Я ознакомился(-ась) с <a href="#termsInfo" id="termsLink">условиями бронирования</a> и принимаю их. <span class="required">*</span></span></label>
+        <label class="legal"><input type="checkbox" id="privacy" required><span>Я даю согласие на обработку персональных данных в соответствии с <a href="#privacyInfo" id="privacyLink">политикой конфиденциальности</a>. <span class="required">*</span></span></label>
+      </section>
+    </div>
+
+    <aside class="summary" aria-labelledby="summaryTitle">
+      <div class="summary-top"><h2 id="summaryTitle">Ваше бронирование</h2><span class="demo-pill">Демо-цена</span></div>
+      <div class="summary-dates"><strong id="summaryDateText">Выберите даты проживания</strong><span id="summaryGuestText">2 взрослых · 1 номер</span></div>
+      <div class="price-lines" aria-live="polite" aria-atomic="true">
+        <div class="price-line"><span>Проживание <span id="priceNightsLabel">(3 ночи)</span></span><span id="roomPrice">₽ 54 000</span></div>
+        <div class="price-line"><span>Цена за ночь</span><span id="nightPrice">₽ 18 000</span></div>
+        <div class="price-line"><span>Налоги и сборы</span><span id="taxPrice">Не заданы</span></div>
+        <div class="price-line"><span>Дополнительные услуги</span><span id="extrasPrice">₽ 0</span></div>
+        <div class="price-line"><span>Обязательные услуги</span><span>Не заданы</span></div>
+        <div class="price-line total"><span>Итого за проживание</span><span id="totalPrice">₽ 54 000</span></div>
+      </div>
+      <div class="pay-now"><div class="pay-row"><span>Оплата на этом шаге</span><strong>₽ 0</strong></div><p>Оплата не выполняется. Условия оплаты будут уточнены на следующем этапе.</p></div>
+      <button type="submit" class="primary">Продолжить к подтверждению <span aria-hidden="true">→</span></button>
+      <button type="button" class="secondary" id="backBtn">Изменить параметры проживания</button>
+      <p class="summary-foot">Это демонстрационный расчёт. Итоговая цена и наличие номера не подтверждены.</p>
+    </aside>
+  </div>
+  </form>
+</main>
+<footer class="footer">
+  <div class="wrap footer-inner"><div><div class="footer-brand">LAUBERGE GA</div><p>Демонстрационный интерфейс учебного проекта.</p><p>Контакты отеля не подключены.</p></div><div class="footer-links"><a href="#termsInfo" id="footerTerms">Условия бронирования</a><a href="#privacyInfo" id="footerPrivacy">Политика конфиденциальности</a><a href="#guest">Поддержка</a></div></div>
+</footer>
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal"><div class="eyebrow">Lauberge GA · Прототип</div><h2 id="modalTitle">Следующий этап — подтверждение данных</h2><div id="modalText"><p>Проверка формы пройдена. Реальное бронирование не создано.</p></div><div class="modal-actions"><button type="button" class="primary" id="modalClose">Вернуться к форме</button><button type="button" class="secondary" id="modalOk">Понятно</button></div></div>
+</div>
+<script>
+(function(){
+  const $=id=>document.getElementById(id);
+  const money=n=>'₽ '+Math.round(n).toLocaleString('ru-RU');
+  const pad=n=>String(n).padStart(2,'0');
+  const today=new Date(); today.setHours(0,0,0,0);
+  const plusDays=(date,n)=>{const d=new Date(date);d.setDate(d.getDate()+n);return d};
+  const toISO=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+  const dateFmt=iso=>{if(!iso)return '—';const d=new Date(iso+'T12:00:00');return d.toLocaleDateString('ru-RU',{day:'numeric',month:'short',year:'numeric'})};
+  const checkin=$('checkin'),checkout=$('checkout');
+  checkin.min=toISO(today);checkin.value=toISO(plusDays(today,14));checkout.min=toISO(plusDays(today,15));checkout.value=toISO(plusDays(today,17));
+  let adults=2,children=0,paramsChanged=false;
+  function nights(){if(!checkin.value||!checkout.value)return 0;return Math.round((new Date(checkout.value+'T12:00:00')-new Date(checkin.value+'T12:00:00'))/86400000)}
+  function selectedRate(){return document.querySelector('input[name="rate"]:checked').value}
+  function baseNight(){return selectedRate()==='breakfast'?21600:18000}
+  function updateDates(changed){
+    const inDate=checkin.value;
+    checkout.min=inDate?toISO(plusDays(new Date(inDate+'T12:00:00'),1)):toISO(plusDays(today,1));
+    if(inDate&&checkout.value&&checkout.value<=inDate){checkout.value=checkout.min}
+    const n=nights();
+    $('nightsText').textContent=n>0?`${n} ${n===1?'ночь':n<5?'ночи':'ночей'}`:'Проверьте даты';
+    $('priceNightsLabel').textContent=`(${n} ${n===1?'ночь':n<5?'ночи':'ночей'})`;
+    $('summaryDateText').textContent=checkin.value&&checkout.value&&n>0?`${dateFmt(checkin.value)} — ${dateFmt(checkout.value)}`:'Проверьте даты проживания';
+    if(changed)markChanged();
+    renderPrice();
+  }
+  function markChanged(){paramsChanged=true;$('availabilityNote').classList.add('show')}
+  function renderAges(){
+    const holder=$('childrenAges');holder.innerHTML='';
+    for(let i=0;i<children;i++){
+      const label=document.createElement('label');label.className='age-field';label.textContent=`Возраст ребёнка ${i+1}`;
+      const select=document.createElement('select');select.name='childAge';select.setAttribute('aria-label',`Возраст ребёнка ${i+1}`);
+      for(let age=0;age<=17;age++){const op=document.createElement('option');op.value=age;op.textContent=age===0?'До 1 года':`${age} ${age===1?'год':age<5?'года':'лет'}`;select.append(op)}
+      label.append(select);holder.append(label);
+    }
+  }
+  function renderGuests(){
+    $('adultsCount').textContent=adults;$('childrenCount').textContent=children;
+    document.querySelectorAll('[data-counter]').forEach(btn=>{
+      const kind=btn.dataset.counter;btn.disabled=kind==='adults'?(adults<=1&&btn.dataset.delta==='-1'):(children<=0&&btn.dataset.delta==='-1'||children>=6&&btn.dataset.delta==='1');
+    });
+    $('summaryGuestText').textContent=`${adults} ${adults===1?'взрослый':adults<5?'взрослых':'взрослых'}${children?` · ${children} детей`:''} · ${$('rooms').value} ${$('rooms').value==='1'?'номер':'номера'}`;
+    renderAges();renderPrice();
+  }
+  function renderPrice(){
+    const n=Math.max(0,nights()),rooms=Number($('rooms').value),rate=baseNight();
+    const room=rate*n*rooms;
+    let extras=0;
+    document.querySelectorAll('.extra:checked').forEach(el=>{
+      if(el.value==='breakfast'&&selectedRate()==='breakfast')return;
+      if(el.value==='breakfast')extras+=Number(el.dataset.price)*n*adults;
+      else if(el.value!=='crib')extras+=Number(el.dataset.price);
+    });
+    $('flexRate').textContent=money(18000*nights());$('breakfastRate').textContent=money(21600*nights());
+    $('roomPrice').textContent=money(room);$('nightPrice').textContent=money(rate);
+    $('extrasPrice').textContent=money(extras);$('totalPrice').textContent=money(room+extras);
+  }
+  document.querySelectorAll('[data-counter]').forEach(btn=>btn.addEventListener('click',()=>{
+    const delta=Number(btn.dataset.delta);
+    if(btn.dataset.counter==='adults')adults=Math.max(1,Math.min(8,adults+delta));else children=Math.max(0,Math.min(6,children+delta));
+    renderGuests();markChanged();
+  }));
+  checkin.addEventListener('change',()=>updateDates(true));checkout.addEventListener('change',()=>updateDates(true));
+  $('rooms').addEventListener('change',()=>{renderGuests();markChanged()});
+  document.querySelectorAll('input[name="rate"]').forEach(r=>r.addEventListener('change',()=>{
+    document.querySelectorAll('.rate-option').forEach(el=>el.classList.toggle('selected',el.querySelector('input').checked));renderPrice();
+  }));
+  document.querySelectorAll('.extra').forEach(el=>el.addEventListener('change',()=>{
+    if(el.value==='breakfast'&&selectedRate()==='breakfast'&&el.checked){el.checked=false;showModal('Завтрак уже включён в выбранный тариф.','Чтобы избежать двойного начисления, отдельная услуга завтрака не добавлена.');return}
+    renderPrice();
+  }));
+  function setError(id,message,invalid){
+    const field=$(id),err=$(id+'Error');
+    field.setAttribute('aria-invalid',invalid?'true':'false');
+    err.classList.toggle('show',invalid);
+    if(message)err.textContent=message;
+  }
+  function validate(){
+    let ok=true;
+    const first=$('firstName'),last=$('lastName'),email=$('email'),phone=$('phone');
+    const checks=[
+      ['firstName',first.value.trim().length>0,'Укажите имя.'],
+      ['lastName',last.value.trim().length>0,'Укажите фамилию.'],
+      ['email',/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim()),'Введите корректный e-mail.'],
+      ['phone',phone.value.replace(/\D/g,'').length>=7,'Укажите корректный номер телефона (не менее 7 цифр).']
+    ];
+    checks.forEach(([id,valid,msg])=>{setError(id,msg,!valid);if(!valid)ok=false});
+    const dateOk=!!checkin.value&&!!checkout.value&&nights()>0;
+    if(!dateOk){$('availabilityNote').classList.add('show');$('availabilityNote').textContent='Дата выезда должна быть позже даты заезда.';ok=false}
+    if(!$('terms').checked||!$('privacy').checked)ok=false;
+    if(!ok){$('formAlert').classList.add('show');$('formAlert').textContent=(!$('terms').checked||!$('privacy').checked)?'Заполните обязательные поля и отметьте оба обязательных согласия.':'Проверьте отмеченные поля и параметры проживания.';const firstInvalid=document.querySelector('[aria-invalid="true"]');if(firstInvalid)firstInvalid.focus();else $('formAlert').focus()}
+    else $('formAlert').classList.remove('show');
+    return ok;
+  }
+  ['firstName','lastName','email','phone'].forEach(id=>$(id).addEventListener('input',()=>{
+    if($(id).getAttribute('aria-invalid')==='true'){
+      const valid=id==='email'?/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test($(id).value.trim()):id==='phone'?$(id).value.replace(/\D/g,'').length>=7:$(id).value.trim().length>0;
+      if(valid)setError(id,'',false);
+    }
+  }));
+  $('bookingForm').addEventListener('submit',e=>{
+    e.preventDefault();if(!validate())return;
+    const chosen=[...document.querySelectorAll('input[name="wish"]:checked')].map(x=>x.parentElement.textContent.trim());
+    const other=$('wishOther').value.trim();
+    $('modalTitle').textContent='Данные проверены для демонстрации';
+    $('modalText').innerHTML=`<p>Переход к следующему этапу показан условно. <strong>Бронирование не создано</strong>, доступность номера не проверена, письмо не отправлено.</p><p>Параметры: ${dateFmt(checkin.value)} — ${dateFmt(checkout.value)}, ${nights()} ночи, ${adults} взрослых, ${children} детей.</p><p>Демонстрационная сумма: <strong>${$('totalPrice').textContent}</strong>.</p><p>Особые пожелания: ${chosen.length||other?escapeHtml([...chosen,other].filter(Boolean).join('; ')):'не указаны'}.</p>`;
+    $('modalBackdrop').classList.add('open');$('modalClose').focus();
+  });
+  function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+  function showModal(title,text){$('modalTitle').textContent=title;$('modalText').innerHTML=`<p>${escapeHtml(text)}</p>`;$('modalBackdrop').classList.add('open')}
+  function closeModal(){$('modalBackdrop').classList.remove('open')}
+  $('modalClose').addEventListener('click',closeModal);$('modalOk').addEventListener('click',closeModal);
+  $('modalBackdrop').addEventListener('click',e=>{if(e.target===$('modalBackdrop'))closeModal()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+  $('backBtn').addEventListener('click',()=>{$('stay').scrollIntoView({behavior:'smooth',block:'start'});checkin.focus({preventScroll:true})});
+  $('hotelDetailsBtn').addEventListener('click',()=>showModal('Информация об отеле','В этом учебном прототипе подробная страница отеля и подключение к каталогу не реализованы.'));
+  $('accountBtn').addEventListener('click',()=>showModal('Личный кабинет','Оформление без регистрации предусмотрено. Авторизация и личный кабинет в этом прототипе не подключены.'));
+  $('languageBtn').addEventListener('click',()=>showModal('Язык интерфейса','Доступна демонстрационная русская версия. Переключение языка пока не реализовано.'));
+  ['termsLink','privacyLink','footerTerms','footerPrivacy'].forEach(id=>$(id).addEventListener('click',e=>{e.preventDefault();showModal(id.toLowerCase().includes('privacy')?'Политика конфиденциальности':'Условия бронирования','Полный текст документа должен быть предоставлен владельцем системы. Ссылки в прототипе ведут к демонстрационному пояснению; юридический текст не задан.')}));
+  updateDates(false);renderGuests();
+})();
+</script>
+</body>
+</html>
